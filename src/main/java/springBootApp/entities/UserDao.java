@@ -4,7 +4,7 @@ import org.springframework.data.repository.CrudRepository;
 import org.springframework.transaction.annotation.Transactional;
 
 @Transactional
-public interface UserDao extends CrudRepository<User, Long> {
+public interface UserDao extends CrudRepository<User, Long> {  //<keys, values>
 
     /**
      * This method will find an User instance in the database by its email.
