@@ -25,6 +25,8 @@ public class JsonRestController {
                 "DELETE USER: /rest/deleteUser?id=[id]<br><br><br><br>";
     }
 
+
+
     @RequestMapping("createUser")
     public String create(String email, String name) {
         try {
@@ -35,6 +37,7 @@ public class JsonRestController {
         catch (Exception e) {
             return "Error creating user: " + e.toString();
         }
+
     }
 
     @RequestMapping("getAllUsers")
