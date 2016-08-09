@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>spring</groupId>
-    <artifactId>SpringBootMvcWithJspAndRestApp</artifactId>
+    <groupId>groupId</groupId>
+    <artifactId>SpringBootMvcAndHibernate</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <parent>
@@ -15,10 +15,20 @@
     </parent>
 
     <dependencies>
-        <!-- SPRING -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+
+        <!-- HyperSQL DB -->
+        <dependency>
+            <groupId>org.hsqldb</groupId>
+            <artifactId>hsqldb</artifactId>
+            <version>2.3.4</version>
         </dependency>
 
         <!-- JSTL -->
@@ -48,7 +58,4 @@
             </plugin>
         </plugins>
     </build>
-
-
-
 </project>
