@@ -13,6 +13,9 @@
 <h1>Users </h1>
 
 <h5>Greetings from Spring Boot!</h5>
+<p>
+    Today's date: <%= (new java.util.Date()).toLocaleString()%>
+</p>
 
 <html>
 <body>
@@ -28,7 +31,7 @@
     </form>
     <form action="/rest/deleteUser" method="GET">
         ID: <input type="text" name="id" value="${id}"/><br />
-        Delete User: <input type="submit"<br><br>
+        Delete User: <input type="submit"><br><br>
     </form>
     <form action="/rest/getUserByEmail" method="GET">
         Email: <input type="text" name="email" value="${email}"/><br>
